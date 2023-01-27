@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style/style.css">
+    <title>Formulário Valorant</title>
+</head>
+<body>
+    <Form id="form">
+        
+            <h1>Formulario Valorant</h1>
+
+        <fieldset>
+            <legend>Me diga quem é você no valorant</legend>
+
+            <label>Email</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email" required class="inp_text">
+
+            <label>Nickname</label>
+            <input type="text" name="nickname" id="nickname" placeholder="Nickname" required class="inp_text">
+
+            <label>Qual seu agente favorito?</label>
+            <select name="agente" id="agente" required class="select">
+                <option value="" selected disabled class="select_btn">Selecione</option>
+                <option value="Brinstone">Brinstone</option>
+                <option value="Phoenix">Phoenix</option>
+                <option value="Sage">Sage</option>
+                <option value="Sova">Sova</option>
+                <option value="Viper">Viper</option>
+                <option value="Cypher">Cypher</option>
+                <option value="Reyna">Reyna</option>
+                <option value="Killjoy">Killjoy</option>
+                <option value="Breach">Breach</option>
+                <option value="Omen">Jett</option>
+                <option value="Raze">Raze</option>
+                <option value="Skye">Skye</option>
+                <option value="Yoru">Yoru</option>
+                <option value="Astra">Astra</option>
+                <option value="Kay/o">Kay/o</option>
+                <option value="Chamber">Chamber</option>
+                <option value="Neon">Neon</option>
+                <option value="Fade">Fade</option>
+                <option value="Harbor">Harbor</option>
+            </select>
+
+            <label>Qual seu mapa favorito?</label>
+            <select name="mapa" id="mapa" required class="select">
+                <option value="" selected disabled class="select_btn">Selecione</option>
+                <option value="Lotus">Lotus</option>
+                <option value="Pearl">Pearl</option>
+                <option value="Fracture">Fracture</option>
+                <option value="Breeze">Breeze</option>
+                <option value="Icebox">Icebox</option>
+                <option value="Bind">Bind</option>
+                <option value="Haven">Haven</option>
+                <option value="Split">Split</option>
+                <option value="Ascent">Ascent</option>
+            </select>
+
+            <label>Qual seu rank?</label>
+            <select name="rank" id="rank" required class="select">
+                <option value="" selected disabled class="select_btn">Selecione</option>
+                <option value="Sem">Sem Rank</option>
+                <option value="FerroIII">Ferro III</option>
+                <option value="FerroII">Ferro II</option>
+                <option value="FerroI">Ferro I</option>
+                <option value="BronzeIII">Bronze III</option>
+                <option value="Bronze II">Bronze II</option>
+                <option value="BronzeI">Bronze I</option>
+                <option value="PrataIII">Prata III</option>
+                <option value="Prata II">Prata II</option>
+                <option value="Prata I">Prata I</option>
+                <option value="OuroIII">Ouro III</option>
+                <option value="OuroII">Ouro II</option>
+                <option value="OuroI">Ouro I</option>
+                <option value="PlatinaIII">Platina III</option>
+                <option value="PlatinaII">Platina II</option>
+                <option value="PlatinaI">Platina I</option>
+                <option value="DiamanteIII">Diamante III</option>
+                <option value="DiamanteII">Diamante II</option>
+                <option value="DiamanteI">Diamante I</option>
+                <option value="ImortalIII">Imortal III</option>
+                <option value="ImortalII">Imortal II</option>
+                <option value="Imortal I">Imortal I</option>
+                <option value="Radiante">Radiante</option>
+            </select>
+
+            <input type="submit" value="submit" id="submit">
+        </fieldset>
+    </Form>
+
+    <section id="section">
+        <span class="material-symbols-outlined" id="done">done</span>
+        <p>Formulário enviado com sucesso</p>
+        <span class="material-symbols-outlined" id="back" onclick="back()">arrow_back_ios_new</span>
+    </section>
+
+    <script>
+        var done_section = document.getElementById('section')
+        var form_subm = document.getElementById('form')
+        form_subm.addEventListener("submit", done =>{
+            done.preventDefault()
+            done_section.style.transform= 'translate(0%)'
+        })
+        
+        function back(){
+            done_section.style.transform= 'translate(100%)'
+        }
+    </script>
+</body>
+</html>
