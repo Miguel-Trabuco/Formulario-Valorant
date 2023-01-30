@@ -99,15 +99,16 @@
     </section>
 
     <script>
-        var done_section = document.getElementById('section')
-        var form_subm = document.getElementById('form')
-        form_subm.addEventListener("submit", done =>{
-            done.preventDefault()
-            done_section.style.transform= 'translate(0%)'
+        const done_section = document.getElementById('section')
+        const form_subm = document.getElementById('form')
+        form_subm.addEventListener('submit', section => {
+            section.preventDefault()
+            done_section.style.transition= '1s'
+            done_section.style.transform= 'translateX(0%)'
         })
-        
+
         function back(){
-            done_section.style.transform= 'translate(100%)'
+            done_section.style.transform= 'translateX(100%)'
         }
     </script>
 </body>
