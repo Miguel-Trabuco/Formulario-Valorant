@@ -16,11 +16,6 @@
     
 }
 
-/*
-Vermelho = #FF4655
-Preto: = #111111
-*/
-
 #form{
     background-color: #111111;
     height: 100vh;
@@ -104,7 +99,7 @@ label{
     color: #FF4655;
 }
 
-/*Tablets*/
+/*Tablet*/
 @media screen and (min-width: 481px) and (max-width: 768px){
     h1{
         padding: 4vh;
@@ -140,6 +135,7 @@ label{
     }
 }
 
+/*PC*/
 @media screen and (min-width:  769px){
     body{
         background-image: url(../images/killjoy\ img.png);
