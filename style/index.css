@@ -1,0 +1,198 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "valorant";
+    src: url(../fonts/Valorant\ Font.ttf) format("truetype");
+}
+@font-face {
+    font-family: "ff";
+    src: url(../fonts/FontFont_FF.Mark.Pro.otf) format("opentype");
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    
+}
+
+/*
+Vermelho = #FF4655
+Preto: = #111111
+*/
+
+#form{
+    background-color: #111111;
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "valorant", Arial, Helvetica, sans-serif;
+    font-size: 5vh;
+    color: #FF4655;
+    padding: 2vh;
+}
+
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    font-family: "ff", Arial, Helvetica, sans-serif;
+}
+
+legend{
+    text-align: center;
+    color: #111111;
+    background-color: #FF4655;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+label{
+    margin: 4vh 0vh 1vh 2vh;
+    color: #FF4655;
+    font-size: 3vh;
+}
+
+.inp_text{
+    font-size: 3vh;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #FF4655;
+    outline: none;
+    width: 40vh;
+    margin-left: 2vh;
+    color: white;
+}
+
+.select{
+    font-size: 3vh;
+    background-color: transparent;
+    border: 2px solid #FF4655;
+    border-radius: 5px;
+    outline: none;
+    width: 40vh;
+    margin-left: 2vh;
+    color: white;
+}
+
+.select > option{
+    background-color: #111111;
+    color: white;
+}
+
+#submit{
+    margin-top: 3vh;
+    width: 40vh;
+    height: 10vh;
+    align-self: center;
+    font-size: 5vh;
+    text-transform: uppercase;
+    background-color: #FF4655;
+    border: 2px solid #FF4655;
+    color: #111111;
+    border-radius: 20px;
+    font-family: "valorant", Arial, Helvetica, sans-serif;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: transparent;
+    color: #FF4655;
+}
+
+/*Tablets*/
+@media screen and (min-width: 481px) and (max-width: 768px){
+    h1{
+        padding: 4vh;
+    }
+
+    fieldset{
+        border: 2px solid #FF4655;
+        margin: 0vh 4vh;
+        padding-bottom: 4vh;
+        border-radius: 20px;
+    }
+
+    legend{
+        font-size: 2vh;
+        padding: 10px;
+    }
+
+    label{
+        margin: 4vh 0vh 1vh 3vh;
+    }
+
+    .inp_text{
+        margin-left: 3vh;
+        width: 50vh;
+    }
+
+    .select{
+        margin-left: 3vh;
+    }
+
+    #submit{
+        margin-top: 3vh;
+    }
+}
+
+@media screen and (min-width:  769px){
+    body{
+        background-image: url(../images/killjoy\ img.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    form{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        color: #FF4655;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1{
+        font-size: 6vh;
+    }
+
+    fieldset{
+        width: 80%;
+        height: 85%;
+        border: 2px solid #FF4655;
+        border-radius: 20px;
+    }
+
+    legend{
+        padding: 2px;
+        border-radius: 5px;
+    }
+
+    label{
+        margin: 3vh 0 0.5vh 3vh;
+        font-size: 3vh;
+    }
+
+    .inp_text{
+        margin-left: 3vh;
+        width: 50%;
+    }
+
+    .select{
+        width: 50%;
+        margin-left: 3vh;
+    }
+
+    #submit{
+        margin-top: 7vh;
+    }
+}

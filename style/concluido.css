@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "valorant";
+    src: url(../fonts/Valorant\ Font.ttf) format("truetype");
+}
+@font-face {
+    font-family: "ff";
+    src: url(../fonts/FontFont_FF.Mark.Pro.otf) format("opentype");
+}
+
+body{
+    background-color: #FF4655;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+#done{
+    color: #111111;
+    border: 5px solid #111111;
+    border-radius: 100%;
+    font-size: 25vh;
+    margin-top: 50%;
+}
+
+p{
+    font-family: "ff";
+    font-size: 2.5vh;
+}
+
+#back{
+    color: #111111;
+    border: 2px solid #111111;
+    border-radius: 100%;
+    padding: 5px;
+    font-size: 5vh;
+    transition: 0.5s;
+}
+
+#back:hover{
+    cursor: pointer;
+    background-color: #111111;
+    color: #FF4655;
+}
+
+/*Tablet*/
+@media screen and (min-width: 481px) and (max-width: 768px){
+    #done{
+        margin-top: 30%;
+    }
+
+    #done{
+        font-size: 30vh;
+    }
+
+    p{
+        font-size: 4vh;
+    }
+
+    #back{
+        font-size: 7vh;
+        border: 4px solid #111111;
+    }
+}
+
+@media screen and (min-width:  769px){
+    #done{
+        margin-top: 5%;
+        font-size: 40vh;
+    }
+
+    p{
+        font-size: 6vh;
+    }
+
+    #back{
+        font-size: 10vh;
+        border: 4px solid #111111;
+    }
+}
